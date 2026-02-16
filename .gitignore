@@ -1,0 +1,11 @@
+# Ignore dependencies in all folders
+**/node_modules
+
+# Ignore secrets in all folders
+.env
+**/.env
+
+# Ignore build artifacts
+build/
+dist/
+.DS_Store

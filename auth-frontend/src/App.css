@@ -1,0 +1,171 @@
+/* client/src/App.css */
+:root {
+    --bg-dark: #0d1117;
+    --card-bg: #161b22;
+    --border-color: #30363d;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --btn-green: #238636;
+    --btn-green-hover: #2ea043;
+    --btn-red: #da3633;
+    --input-bg: #0d1117;
+    --focus-blue: #58a6ff;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+.logo-area {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.github-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-primary);
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    transition: border-color 0.2s;
+    height: 35px;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--focus-blue);
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: var(--btn-green);
+    color: white;
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    height: 35px;
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-green-hover);
+}
+
+.btn-danger {
+    background-color: var(--card-bg);
+    color: var(--btn-red);
+    border: 1px solid var(--border-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.btn-danger:hover {
+    background-color: #b62324;
+    color: white;
+    border-color: #b62324;
+}
+
+.switch-text {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 13px;
+}
+
+.link {
+    color: var(--focus-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Dashboard Wallpaper Design */
+.wallpaper-container {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wallpaper-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 40px 60px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.wallpaper-content h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.logout-btn {
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(255, 75, 43, 0.4);
+}
+
+.logout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
+}
